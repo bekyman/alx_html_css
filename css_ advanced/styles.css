@@ -1,4 +1,4 @@
-/* --- CSS STYLES TO MIMIC THE DESIGN --- */
+
 @import url('https://fonts.googleapis.com/css2?family=Coiny&family=Source+Sans+Pro:wght@400;600;700&display=swap');
 
 :root {
@@ -16,11 +16,10 @@ body {
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Coiny', cursive; /* Approximating the bold font */
+    font-family: 'Coiny', cursive; 
     margin: 10px 0;
 }
 
-/* HEADER & HERO */
 header {
     position: absolute;
     width: 100%;
@@ -48,9 +47,8 @@ nav ul {
     list-style: none;
     display: flex;
     gap: 30px;
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-}
+    margin: 0; 
+    padding: 0; 
 
 nav a {
     text-decoration: none;
@@ -60,7 +58,6 @@ nav a {
     letter-spacing: 1px;
 }
 
-/* HERO SECTION */
 .hero-section {
     background: linear-gradient(rgba(7, 22, 41, 0.6), rgba(7, 22, 41, 0.6)), url('Object.png'); /* Placeholder image */
     background-size: cover;
@@ -95,7 +92,6 @@ button {
     margin-top: 20px;
 }
 
-/* PROS SECTION */
 .pros-section {
     text-align: center;
     padding: 50px 20px;
@@ -135,7 +131,6 @@ button {
     opacity: 0.8;
 }
 
-/* QUOTE SECTION */
 .quote-section {
     background-color: var(--primary-color);
     display: flex;
@@ -143,9 +138,8 @@ button {
     align-items: center;
     padding: 60px 20px;
     gap: 40px;
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
-    text-align: center; /* Center text when wrapped */
-}
+    flex-wrap: wrap; 
+    text-align: center; 
 
 .quote-section img {
     width: 120px;
@@ -164,7 +158,6 @@ blockquote {
     line-height: 1.5;
 }
 
-/* TUTORIALS SECTION */
 .tutorials-section {
     background-color: #f7f7f7;
     color: var(--text-dark);
@@ -257,7 +250,6 @@ blockquote {
     margin: 0;
 }
 
-/* MEMBERSHIP SECTION */
 .membership-section {
     background-color: var(--dark-bg);
     color: white;
@@ -282,7 +274,6 @@ blockquote {
     margin-bottom: 10px;
 }
 
-/* FAQ SECTION */
 .faq-section {
     background-color: white;
     color: var(--text-dark);
@@ -315,7 +306,6 @@ blockquote {
     color: #666;
 }
 
-/* FOOTER */
 footer {
     background-color: var(--dark-bg);
     color: white;
@@ -330,21 +320,19 @@ footer {
     max-width: 1100px;
     margin: 0 auto;
     margin-bottom: 20px;
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
-    gap: 20px; /* Space between logo and social on wrap */
+    flex-wrap: wrap; 
+    gap: 20px; 
 }
 
 .social-icons {
     display: flex;
-    gap: 20px; /* Space between icons */
-}
+    gap: 20px; 
 
 .social-icons i {
     font-size: 1.5rem;
     cursor: pointer;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
     .hero-content h1 {
         font-size: 3rem;
