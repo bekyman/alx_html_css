@@ -1,45 +1,73 @@
-logo<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="0-styles.css">
-  <title>HEADPHONES</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Headphones Landing Page</title>
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <img src="favicon.png" alt="logo">
-      <ul>
-        <li><a href="#">what we do</a></li>
-        <li><a href="#">our results</a></li>
-        <li><a href="#">contact us</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <div>
-      <h1>Lorem ipsum dolor set amet lorem ipsum</h1>
-      <h2>Lorem ipsum dolor set amet lorem ipsum</h2>
-      <button>CALL TO ACTION</button>
-    </div>
-    <div>
-      <p>This is a free website designed by Bereket Amanuel.  He is a website development 
-      expert for more than 2 years of experience.</p>
-    </div>
-  </main>
-</body>
-</html>
-<section>
-  <div>
-    <h3>What we do....</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-</p>
-  </div>
-</section>
-<section>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-</section>
+
+    <!-- HEADER / HERO -->
+    <header class="hero">
+        <nav class="navbar">
+            <div class="nav-left">
+                <img src="favicon.png" class="logo-img" alt="logo">
+                <span class="brand">HEADPHONES</span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#what">What we do</a></li>
+                <li><a href="#results">Our results</a></li>
+                <li><a href="#contact">Contact us</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero-content">
+            <h1>Lorem ipsum dolor set amet lorem ipsum</h1>
+            <p class="subtitle">Lorem ipsum dolor set amet lorem ipsum dolor set amet</p>
+            <a href="#contact" class="btn">Call to Action</a>
+
+            <p class="hero-footer-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+        </div>
+    </header>
+      <section class="what-we-do" id="what">
+        <h2 class="section-title">What we do…</h2>
+        <p class="section-desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+        </p>
+
+        <div class="features-grid">
+            <div class="feature-box">
+                <i class="fas fa-wave-square"></i>
+                <h3>Lorem ipsum</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+
+            <div class="feature-box">
+                <i class="fas fa-clapperboard"></i>
+                <h3>Lorem ipsum</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+
+            <div class="feature-box">
+                <i class="fas fa-music"></i>
+                <h3>Lorem ipsum</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+
+            <div class="feature-box">
+                <i class="fas fa-ear-listen"></i>
+                <h3>Lorem ipsum</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+    </section>
