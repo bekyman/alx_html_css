@@ -1,1 +1,84 @@
+/*
+The corresponding HTML for this CSS section looks like this:
+<section id="results" class="results">
+    <h2 class="section-title">Our Results</h2>
+    <p class="section-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+    <div class="pentagon-container">
+        <div class="pentagon-wrapper">
+            <div class="pentagon">
+                <h3>+95%</h3>
+            </div>
+            <span class="pentagon-label">Satisfaction</span>
+        </div>
+    </div>
+</section>
+*/
 
+/* --- RESULTS SECTION --- */
+.results {
+    /* Apply dark background and image with overlay */
+    background: linear-gradient(var(--dark-overlay), var(--dark-overlay)), 
+                url('headphones_hero_1.jpg'); /* Reusing the hero image */
+    background-size: cover;
+    background-position: center;
+    padding: 80px 20px;
+    color: var(--text-light); /* Text color set to white (light) */
+    text-align: center;
+}
+
+.results .section-title {
+    /* Override global title style if needed, but primary color should be white */
+    color: var(--text-light);
+}
+
+.results .section-desc {
+    /* Adjust opacity for readability on the dark background */
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 50px; /* Increased margin for pentagons below */
+}
+
+.pentagon-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.pentagon-wrapper {
+    text-align: center;
+    /* This wrapper ensures the label stays centered below the shape */
+}
+
+/* The Pentagon Shape */
+.pentagon {
+    width: 140px;
+    height: 140px;
+    background-color: var(--primary-color); /* Use accent color variable */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Key to the shape: using clip-path for the five-sided figure */
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    
+    margin: 0 auto 15px;
+    transition: transform 0.3s ease;
+}
+
+.pentagon:hover {
+    /* Simple hover effect for interaction */
+    transform: scale(1.05);
+}
+
+.pentagon h3 {
+    font-size: 1.8rem;
+    color: var(--text-light);
+    font-weight: bold;
+}
+
+.pentagon-label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.8;
+}
