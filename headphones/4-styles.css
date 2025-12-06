@@ -1,1 +1,55 @@
+/*
+The corresponding HTML for this CSS section looks like this:
+<footer>
+    <div class="footer-content">
+        <p class="copyright">© 2023 Headphones. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+</footer>
+*/
 
+/* --- FOOTER --- */
+footer {
+    background-color: #1a1a1a; /* Very dark background */
+    color: var(--text-light); /* White text */
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: var(--max-width); /* Use global width variable */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically by default */
+    align-items: center;
+    gap: 15px;
+}
+
+.copyright {
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+.social-icons a {
+    color: var(--text-light);
+    font-size: 1.2rem;
+    margin: 0 10px;
+    opacity: 0.8;
+}
+
+.social-icons a:hover {
+    color: var(--primary-color); /* Highlight color on hover */
+    opacity: 1;
+}
+
+/* Media Query for larger screens: Arrange content horizontally */
+@media (min-width: 768px) {
+    .footer-content {
+        flex-direction: row; /* Layout elements side-by-side */
+        justify-content: space-between;
+    }
+}
