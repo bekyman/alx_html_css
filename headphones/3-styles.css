@@ -1,1 +1,76 @@
+/*
+The corresponding HTML for this CSS section looks like this:
+<section id="contact" class="contact">
+    <h2 class="section-title">Contact Us</h2>
+    <p class="section-desc">We're here to help. Send us a message and we'll get back to you as soon as possible.</p>
+    <form class="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" required>
+        
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+        
+        <label for="message">Message</label>
+        <textarea id="message" rows="5" required></textarea>
+        
+        <button type="submit" class="btn">Send Message</button>
+    </form>
+</section>
+*/
 
+/* --- CONTACT SECTION --- */
+.contact {
+    /* Centralizes the container on the page */
+    padding: 80px 20px;
+    text-align: center;
+    max-width: 600px; 
+    margin: 0 auto;
+}
+
+.contact-form {
+    /* Simple Flexbox for vertical stacking */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left; /* Aligns input labels to the left */
+    margin-top: 40px;
+}
+
+.contact-form label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #333;
+    /* Negative margin pulls the label closer to the input for better grouping */
+    margin-bottom: -10px; 
+}
+
+.contact-form input, 
+.contact-form textarea {
+    padding: 12px 15px; 
+    border: 1px solid #ddd;
+    border-radius: 4px; 
+    font-size: 0.95rem;
+    background: #f9f9f9;
+    width: 100%;
+    /* Subtle transition for focus effect */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Enhances user experience when input field is active */
+.contact-form input:focus, 
+.contact-form textarea:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(255, 107, 107, 0.2); /* Light pink glow */
+    outline: none; /* Removes default browser focus ring */
+    background: #fff;
+}
+
+.contact-form textarea {
+    resize: vertical; /* Allows users to resize vertically, but not horizontally */
+}
+
+/* Overriding the default button style to make it full width */
+.contact-form .btn {
+    width: 100%;
+    margin-top: 10px;
+}
