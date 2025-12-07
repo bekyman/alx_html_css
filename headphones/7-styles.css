@@ -1,1 +1,53 @@
+/* --- ANIMATIONS --- */
 
+/* Scale + fade-in animation for features */
+.animate {
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    opacity: 0.9;
+}
+.animate:hover {
+    transform: scale(1.1) rotate(3deg);
+    opacity: 1;
+}
+
+/* Bounce animation for results */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.bounce {
+    animation: bounce 2s infinite;
+    transition: transform 0.3s ease;
+}
+.bounce:hover {
+    transform: scale(1.1) rotate(-5deg);
+}
+
+/* Pentagon styling (example, keep your existing styles) */
+.pentagon {
+    width: 100px;
+    height: 100px;
+    background: var(--primary-color, #ff4c4c);
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* Feature box styling */
+.feature-box {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.feature-box i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: var(--primary-color, #ff4c4c);
+  }
