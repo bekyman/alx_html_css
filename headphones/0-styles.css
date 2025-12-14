@@ -1,4 +1,4 @@
-/* --- 1. VARIABLES (The Foundation) --- */
+
 :root {
     --primary-color: #ff6b6b;
     --primary-hover: #ff5252;
@@ -8,7 +8,7 @@
     --max-width: 1200px;
 }
 
-/* --- 2. RESET --- */
+
 * {
     margin: 0;
     padding: 0;
@@ -31,7 +31,7 @@ ul {
     list-style: none;
 }
 
-/* --- 3. REUSABLE COMPONENTS --- */
+
 .btn {
     display: inline-block;
     background-color: var(--primary-color);
@@ -50,23 +50,21 @@ ul {
     transform: translateY(-2px);
 }
 
-/* --- 4. HERO SECTION (Outside -> Inside) --- */
 
-/* Parent Container */
 .hero {
-    /* Linear gradient overlays the image to make text pop */
+   
     background: linear-gradient(var(--dark-overlay), rgba(10, 26, 42, 0.7)), 
                 url('headphones_hero_1.jpg'); 
     background-size: cover;
     background-position: center;
-    background-attachment: fixed; /* Creates the Parallax effect */
+    background-attachment: fixed; 
     color: var(--text-light);
-    min-height: 100vh; /* Takes full viewport height */
+    min-height: 100vh; 
     display: flex;
     flex-direction: column;
 }
 
-/* Navbar Layout */
+
 .navbar {
     width: 100%;
     max-width: var(--max-width);
@@ -103,16 +101,16 @@ ul {
     color: var(--primary-color);
 }
 
-/* Hero Content Layout */
+
 .hero-content {
-    flex: 1; /* Pushes content to take available space */
+    flex: 1; 
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Vertically centers text */
-    align-items: center; /* Horizontally centers text */
+    justify-content: center; 
+    align-items: center; 
     text-align: center;
     padding: 20px;
-    margin-top: -60px; /* Slight visual offset to account for navbar */
+    margin-top: -60px; 
 }
 
 .hero-content h1 {
